@@ -12,7 +12,7 @@ This project investigates the impact of **further fine-tuning (domain-adaptive t
 
 | File | Description |
 |------|-------------|
-| `electra-tr-reviews-further-finetuning.ipynb` | 📓 Main notebook: baseline evaluation → domain-adaptive fine-tuning → comparison |
+| `electra-tr-reviews-domain-adaptive-finetuning.ipynb` | 📓 Main notebook: baseline evaluation → domain-adaptive fine-tuning → comparison |
 | `turkish_product_reviews_train.csv` | 📊 Domain-specific training dataset ([Turkish product reviews](https://huggingface.co/datasets/fthbrmnby/turkish_product_reviews)) |
 | `out-fine-tuned-model/` | 💾 Domain-adaptive fine-tuning outputs and checkpoints |
 | `pyproject.toml` | ⚙️ Project configuration |
@@ -65,7 +65,7 @@ Run the notebook with uv:
 
 ```powershell
 # open directly in VS Code
-code electra-tr-reviews-further-finetuning.ipynb
+code electra-tr-reviews-domain-adaptive-finetuning.ipynb
 ```
 or
 ```powershell
@@ -86,10 +86,18 @@ uv run jupyter notebook
 * **Approach**: Further fine-tuning on the published checkpoint
 * **Output**: Domain-adapted checkpoints saved in `out-fine-tuned-model/`
 
+### Trained model (Hugging Face)
+
+The domain-adapted model checkpoints produced by this project have been uploaded to Hugging Face for easy access and inspection:
+
+* **Trained model (domain-adaptive)**: https://huggingface.co/mertafacan/electra-tr-product-reviews-daft
+
+You can pull the model directly with the Hugging Face Transformers library or view the model card on the Hugging Face website.
+
 ### Evaluation & Comparison
 
 * **Baseline Performance**: Performance of the published model on product reviews
-* **Further Fine-tuning Performance**: Performance after domain-adaptive training
+* **Domain Adaptation Fine-tuning Performance**: Performance after domain-adaptive training
 * **Metrics**: Accuracy, F1-score, classification report, and confusion matrix
 * **Analysis**: Examination of domain adaptation impact and performance 
 

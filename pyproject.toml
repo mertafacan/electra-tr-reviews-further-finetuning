@@ -1,5 +1,5 @@
 [project]
-name = "electra-tr-reviews-further-finetuning"
+name = "electra-tr-reviews-daft"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
