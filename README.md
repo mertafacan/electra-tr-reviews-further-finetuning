@@ -1,4 +1,4 @@
-# Turkish Product Reviews — Sentiment Analysis (2025) 🚀
+# Domain specific fine-tuning for Turkish product reviews
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![uv](https://img.shields.io/badge/uv-package%20manager-purple.svg)](https://github.com/astral-sh/uv)
@@ -34,7 +34,7 @@ All dependencies are defined in the `uv.lock` file.
 1. **Clone the repository**:
 
    ```powershell
-   git clone <repo-url>
+   git clone https://github.com/mertafacan/electra-tr-reviews-further-finetuning.git
    cd electra-tr-reviews-further-finetuning
 
 2. **Install uv**:
@@ -47,6 +47,8 @@ All dependencies are defined in the `uv.lock` file.
 
    ```powershell
    uv venv
+   .venv\Scripts\activate
+   
 
 4. **Install project dependencies**:
 
@@ -58,11 +60,11 @@ All dependencies are defined in the `uv.lock` file.
 Run the notebook with uv:
 
 ```powershell
-# Start Jupyter notebook
-uv run jupyter notebook
-
 # open directly in VS Code
 code electra-tr-reviews-further-finetuning.ipynb
+
+# Jupyter notebook (alternative) 
+uv run jupyter notebook
 ```
 
 ## 🤖 Model Comparison
