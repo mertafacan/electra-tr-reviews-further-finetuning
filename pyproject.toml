@@ -1,0 +1,35 @@
+[project]
+name = "electra-tr-reviews-further-finetuning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.10.1",
+    "datasets==4.0.0",
+    "evaluate==0.4.5",
+    "ipykernel>=6.30.1",
+    "ipywidgets>=8.1.7",
+    "jupyter>=1.1.1",
+    "matplotlib==3.10.3",
+    "pandas==2.3.2",
+    "scikit-learn==1.7.1",
+    "seaborn==0.13.2",
+    "torch==2.8.0+cu128",
+    "torchvision==0.23.0+cu128",
+    "tqdm>=4.67.1",
+    "transformers==4.55.4",
+]
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
