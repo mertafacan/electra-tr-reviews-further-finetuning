@@ -34,8 +34,8 @@ All dependencies are defined in the `uv.lock` file.
 1. **Clone the repository**:
 
    ```powershell
-   git clone https://github.com/mertafacan/electra-tr-reviews-further-finetuning.git
-   cd electra-tr-reviews-further-finetuning
+   git clone https://github.com/mertafacan/Electra-Tr-Product-Reviews-DAFT.git
+   cd Electra-Tr-Product-Reviews-DAFT
    ```
 
 2. **Install uv**:
