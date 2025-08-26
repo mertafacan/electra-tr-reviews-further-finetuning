@@ -36,24 +36,28 @@ All dependencies are defined in the `uv.lock` file.
    ```powershell
    git clone https://github.com/mertafacan/electra-tr-reviews-further-finetuning.git
    cd electra-tr-reviews-further-finetuning
+   ```
 
 2. **Install uv**:
 
    ```powershell
    # if not installed
    pip install uv
+   ```
 
 3. **Create environment**:
 
    ```powershell
    uv venv
    .venv\Scripts\activate
+   ```
    
 
 4. **Install project dependencies**:
 
    ```powershell
    uv sync
+   ```
 
 ### Usage
 
@@ -62,7 +66,9 @@ Run the notebook with uv:
 ```powershell
 # open directly in VS Code
 code electra-tr-reviews-further-finetuning.ipynb
-
+```
+or
+```powershell
 # Jupyter notebook (alternative) 
 uv run jupyter notebook
 ```
