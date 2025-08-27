@@ -1,4 +1,4 @@
-# Domain Specific Fine-Tuning for Turkish Product Reviews
+# Domain Adaptive Fine-Tuning for Turkish Product Reviews
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![uv](https://img.shields.io/badge/uv-package%20manager-purple.svg)](https://github.com/astral-sh/uv)
